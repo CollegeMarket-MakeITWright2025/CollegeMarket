@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-market',
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule,],
   templateUrl: './market.component.html',
   styleUrl: './market.component.css'
 })
@@ -15,7 +15,7 @@ export class MarketComponent  implements OnInit{
   
     categories = [
       {
-        id: 1,
+        id: 'books',
         name: 'Books',
         description: 'Buy and sell textbooks, novels, and more.',
         image: 'https://media.istockphoto.com/id/1464137866/vector/group-of-raised-people-hands-holding-books.jpg?s=2048x2048&w=is&k=20&c=TnCAeHDA0b7NSwIS6SSbRY64DM0ncppCJvX8tC-Yz3g='

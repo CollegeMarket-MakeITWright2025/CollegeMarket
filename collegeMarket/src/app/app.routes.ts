@@ -7,6 +7,7 @@ import { TutoringComponent } from './tutoring/tutoring.component';
 import { ForumComponent } from './forum/forum.component';
 import { NgModule } from '@angular/core';
 import { CategoryDetailComponent } from './category-detail/category-detail.component';
+import { BooksComponent } from './books/books.component';
 
 
 
@@ -45,6 +46,11 @@ export const routes: Routes = [
     title: "Forum",
     component: ForumComponent
     },
+    {
+        path: 'books',
+        title: "books",
+        component: BooksComponent
+    }
     
 ];
 

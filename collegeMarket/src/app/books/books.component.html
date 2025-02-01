@@ -1,0 +1,43 @@
+
+
+<div class="books-container">
+    <h1>Welcome to the BookStore</h1>
+    
+    <!-- Book Form -->
+    <form (ngSubmit)="onSubmit()" class="book-form">
+      <div class="form-group">
+        <label for="name">Book Name:</label>
+        <input id="name" type="text" [(ngModel)]="book.name" name="name" class="form-control" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="author">Author:</label>
+        <input id="author" type="text" [(ngModel)]="book.author" name="author" class="form-control" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="isbn">ISBN:</label>
+        <input id="isbn" type="text" [(ngModel)]="book.isbn" name="isbn" class="form-control" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input id="price" type="number" [(ngModel)]="book.price" name="price" class="form-control" required />
+      </div>
+  
+      <button type="submit" class="btn">Add Book</button>
+    </form>
+  
+    <!-- Books for Sale List -->
+    <div *ngIf="booksForSale.length > 0" class="books-list">
+      <h2>Books Currently Up for Sale:</h2>
+      <ul>
+        <li *ngFor="let book of booksForSale">
+          <strong>{{ book.name }}</strong> by {{ book.author }} <br />
+          ISBN: {{ book.isbn }} <br />
+          Price: ${{ book.price }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  
