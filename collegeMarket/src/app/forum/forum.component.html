@@ -1,0 +1,17 @@
+<div class="forum-container">
+  <h2>College Market Forum</h2>
+
+  <!-- Thread Creation Form -->
+  <div class="new-thread-form">
+    <input #threadTitle type="text" placeholder="Thread Title">
+    <select #threadCategory>
+      <option value="General">General</option>
+      <option value="Tutoring">Tutoring</option>
+      <option value="Career Hub">Career Hub</option>
+    </select>
+    <button (click)="addThread(threadTitle.value, threadCategory.value)">Create Thread</button>
+  </div>
+
+  <!-- Display Thread List -->
+  <app-thread-list [threads]="threads"></app-thread-list>
+</div>
