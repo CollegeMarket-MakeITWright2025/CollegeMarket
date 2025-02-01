@@ -1,4 +1,16 @@
 
-
-
-
+<div class="market-container">
+    
+    
+    <div class="category-container">
+      <div class="category" *ngFor="let category of categories">
+        <div class="category-card">
+          <img [src]="category.image" alt="{{category.name}}">
+          <h2>{{category.name}}</h2>
+          <p>{{category.description}}</p>
+          <a [routerLink]="['market', category.id]" class="btn">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
