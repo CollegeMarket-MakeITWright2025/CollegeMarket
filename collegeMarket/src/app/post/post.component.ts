@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-post',
-  imports: [NgFor, NgIf],
+  imports: [NgFor],
   templateUrl: './post.component.html',
   styleUrl: './post.component.css'
 })

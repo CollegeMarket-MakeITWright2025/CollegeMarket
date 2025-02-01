@@ -6,11 +6,11 @@ import { CareerComponent } from './career/career.component';
 import { TutoringComponent } from './tutoring/tutoring.component';
 import { ForumComponent } from './forum/forum.component';
 import { NgModule } from '@angular/core';
+import { CategoryDetailComponent } from './category-detail/category-detail.component';
+import { BooksComponent } from './books/books.component';
 
-// @NgModule({
-//   imports: [RouterModule.forRoot(routes)],
-//   exports: [RouterModule]
-// });
+
+
 export const routes: Routes = [
     {
     path: '',
@@ -20,6 +20,11 @@ export const routes: Routes = [
     path: 'market',
     title: "Student Market",
     component: MarketComponent
+    },
+    {
+        path: 'market/:id',
+        title: "Category Details",
+        component: CategoryDetailComponent,
     },
     {
         path: 'directory',
@@ -37,10 +42,15 @@ export const routes: Routes = [
         component: TutoringComponent
     },
     {
-      path: 'forum',
-      title: "Forum",
-      component: ForumComponent
+    path: 'forum',
+    title: "Forum",
+    component: ForumComponent
     },
+    {
+        path: 'books',
+        title: "books",
+        component: BooksComponent
+    }
     
 ];
 
