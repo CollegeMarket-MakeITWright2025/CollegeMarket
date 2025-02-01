@@ -29,5 +29,6 @@ export const routes: Routes = [
         path: 'tutoring',
         title: "tutoring",
         component: TutoringComponent
-    }
+    },
+    
 ];
