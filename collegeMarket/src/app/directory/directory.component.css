@@ -66,6 +66,7 @@
   .grid-item:hover .grid-link {
     opacity: 0.2;  /* Slight visibility on hover to show interaction */
     z-index: 2;  /* Brings the link to the front on hover */
+    text-decoration: none;
   }
   
   /* --- Responsive Design for Smaller Screens --- */
