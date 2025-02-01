@@ -1,8 +1,8 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
+import { Component } from '@angular/core';
+import { ThreadListComponent } from '../thread-list/thread-list.component';
 @Component({
   selector: 'app-forum',
-  imports: [],
+  imports: [ThreadListComponent],
   templateUrl: './forum.component.html',
   styleUrl: './forum.component.css',
 })
