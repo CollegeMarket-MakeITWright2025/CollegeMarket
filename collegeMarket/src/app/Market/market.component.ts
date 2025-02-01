@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './market.component.css'
 })
 export class MarketComponent {
-  title: string= "Welcome to the Market!";
+  title: string= "College Market";
 
 }
