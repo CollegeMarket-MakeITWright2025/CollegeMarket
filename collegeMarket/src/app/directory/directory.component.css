@@ -1,0 +1,83 @@
+/* --- General Styles for Grid --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 equal-width columns */
+    gap: 20px;  /* Space between grid items */
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .grid-item {
+    position: relative;  /* Needed for positioning the links within grid items */
+    height: 200px;  /* Fixed height for the grid items */
+    background-color: #2ecc71;  /* Solid background color for each grid item */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+    display: flex;
+    align-items: center;  /* Center content vertically */
+    justify-content: center;  /* Center content horizontally */
+    text-align: center;  /* Ensures text is centered if it's multi-line */
+    padding: 10px;  /* Padding inside each grid item */
+    overflow: hidden;  /* Ensures background color doesn't overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* --- Set the background colors for the grid items --- */
+  .grid-item:nth-child(1) {
+    background-color: #3498db;  /* Blue background for the first item */
+  }
+  
+  .grid-item:nth-child(2) {
+    background-color: #e74c3c;  /* Red background for the second item */
+  }
+  
+  .grid-item:nth-child(3) {
+    background-color: #f39c12;  /* Yellow background for the third item */
+  }
+  
+  .grid-item:nth-child(4) {
+    background-color: #9b59b6;  /* Purple background for the fourth item */
+  }
+  
+  .grid-item:nth-child(5) {
+    background-color: #1abc9c;  /* Teal background for the fifth item */
+  }
+  
+  .grid-item:nth-child(6) {
+    background-color: #f1c40f;  /* Gold background for the sixth item */
+  }
+  
+  /* --- Text Styles --- */
+  .grid-item span {
+    font-size: 18px;  /* Adjust the font size as needed */
+    color: white;  /* White text for contrast */
+    font-weight: bold;  /* Makes the text stand out */
+    z-index: 2;  /* Ensure text is always on top */
+  }
+  
+  /* --- Hover Effects for Grid Items --- */
+  .grid-item:hover {
+    transform: translateY(-5px);  /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* More prominent shadow */
+  }
+  
+  /* --- Hover Effects for Links --- */
+  .grid-item:hover .grid-link {
+    opacity: 0.2;  /* Slight visibility on hover to show interaction */
+    z-index: 2;  /* Brings the link to the front on hover */
+  }
+  
+  /* --- Responsive Design for Smaller Screens --- */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);  /* 2 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr;  /* 1 column for small screens */
+    }
+  }
+  
