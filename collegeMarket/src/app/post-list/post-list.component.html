@@ -6,5 +6,7 @@
 
   <!-- New Post Input -->
   <input #postContent type="text" placeholder="Write a post...">
-  <button (click)="addPost(postContent.value)">Post</button>
+  <input #postHashtags type="text" placeholder="Add hashtags (e.g., coding AI)">
+  <button (click)="addPost(postContent.value, postHashtags.value)">Post</button>
+
 </div>

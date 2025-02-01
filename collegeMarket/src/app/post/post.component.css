@@ -1,0 +1,22 @@
+.post-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Keeps content and hashtags aligned */
+  gap: 5px; /* Adds spacing between text and hashtags */
+}
+
+.hashtag {
+  background-color: #9c9f9d;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 12px;
+  font-size: 14px;
+  margin-left: 5px;
+  cursor: pointer;
+  display: inline-block; /* Keeps it inline with text */
+}
+
+.hashtag:hover {
+  background-color: #0056b3;
+}
+

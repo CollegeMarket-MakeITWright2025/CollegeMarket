@@ -1,8 +1,9 @@
+import { NgFor, NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-post',
-  imports: [],
+  imports: [NgFor, NgIf],
   templateUrl: './post.component.html',
   styleUrl: './post.component.css'
 })
