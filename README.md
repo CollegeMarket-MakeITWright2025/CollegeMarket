@@ -19,7 +19,7 @@ College can be an isolating experience, especially for students looking for reso
 
 Designed with the **community spirit of a farmers market**, College Market fosters **connections, collaboration, and convenience** within a university. It not only makes student life more affordable but also strengthens the **campus network**, encouraging students to **engage, support, and succeed together**.
 
-## Runnign the Container 
+## Running the Container 
    Once you have a built docker image you can run it with this command:
 
    ```bash
