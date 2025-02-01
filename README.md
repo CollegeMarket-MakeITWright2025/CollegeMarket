@@ -31,8 +31,8 @@ https://www.youtube.com/watch?v=MNjXgQVd6Gk
 ##  CollegeMarket website
 https://communitycollegemarket.weebly.com/
 
-## Presentation
-The Resources file in the presentation folder has other links relevant to the project.
+## Relevant Links
+The Resources file in the presentation folder has some links that are relevant to the project.
 
 ## Future Improvements
 
