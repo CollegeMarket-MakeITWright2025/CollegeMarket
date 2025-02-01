@@ -7,17 +7,13 @@ WORKDIR /usr/src/app
 #Copy package.json
 COPY package.json package-lock.json ./
  
+RUN npm install -g @angular/cli
 #Install dependencies
 RUN npm install
  
 #Copy other files and folder to working directory
 COPY . .
  
-#Build Angular application in PROD mode
-RUN npm run build --prod
- 
-#Download NGINX Image
-FROM nginx:alpine
- 
-#Copy built angular app files to NGINX HTML folder
-COPY --from=build /usr/src/app /usr/share/nginx/html
+EXPOSE 4200
+
+CMD ng serve --host 0.0.0.0
