@@ -31,6 +31,9 @@ https://www.youtube.com/watch?v=MNjXgQVd6Gk
 ##  CollegeMarket website
 https://communitycollegemarket.weebly.com/
 
+## Presentation
+The Resources file in the presentation folder has other links relevant to the project.
+
 ## Future Improvements
 
 We are constantly working to improve **College Market**, and here are some areas where we’d love contributions or ideas:
