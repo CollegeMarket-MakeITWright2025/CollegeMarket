@@ -1,1 +1,1 @@
-[Weebly website for wirefram](https://communitycollegemarket.weebly.com/)
+[Weebly website for wireframe](https://communitycollegemarket.weebly.com/)
