@@ -1,0 +1,32 @@
+.forum-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.new-thread-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.new-thread-form input, .new-thread-form select, .new-thread-form button {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.thread {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.post-list input {
+  width: calc(100% - 80px);
+  margin-right: 10px;
+}
