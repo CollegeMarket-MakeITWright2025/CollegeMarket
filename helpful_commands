@@ -1,0 +1,8 @@
+
+Docker run command
+
+docker run --rm -p 4200:4200 -it college-market
+
+docker image building command
+
+docker build -t <name of image> <directory>
