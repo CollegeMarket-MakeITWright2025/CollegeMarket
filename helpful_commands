@@ -1,7 +1,7 @@
 
 Docker run command
 
-docker run --rm -p 4200:4200 -it college-market
+docker run --rm -p <Port number goes here> -it college-market
 
 docker image building command
 
